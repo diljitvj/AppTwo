@@ -1,6 +1,8 @@
 var users = kendo.observable({
     users: []
 });
+var template;
+var result;
 $("#getUsers").click(getUsers);
 $("#resetUsers").click(reset);
 
@@ -26,8 +28,8 @@ function getUsers() {
             }
 
             console.log(temp);
-            var template = kendo.template($("#javascriptTemplate").html());
-            var result = template(users);
+            template = kendo.template($("#javascriptTemplate").html());
+            result = template(users);
             $("#userList").html(result);
         }
     });
@@ -35,7 +37,7 @@ function getUsers() {
 }
 
 function reset() {
-    var users = kendo.observable({
+    users = kendo.observable({
         users: []
 
     });
