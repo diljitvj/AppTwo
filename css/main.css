@@ -1,10 +1,47 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+.userWrapper{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 3px;
+}
 
+.userPic{
+    width: 150px;
+    height:150px;
+    border-radius: 75px;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+.userPic>img{
+    width: 150px;
+}
+.userDetails{
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: 3px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.detailsHeading{
+    color: cornflowerblue;
+    font-weight: 600;
+
+
+}
+span{
+    display: block;
+}
+
+button{
+    margin-top: 3px;
+}
 
 
 
